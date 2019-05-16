@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="main" prefHeight="557.0" prefWidth="763.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.FXMLDocumentController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="152.0" prefHeight="92.0" prefWidth="459.0" text="Bank-DZ" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" wrapText="true" AnchorPane.bottomAnchor="467.0" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="152.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Serif Bold" size="50.0" />
+         </font>
+      </Label>
+      <ImageView id="chef" fx:id="chef" accessibleRole="BUTTON" fitHeight="150.0" fitWidth="150.0" layoutX="485.0" layoutY="225.0" onMouseClicked="#loginChef" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/chef.png" />
+         </image>
+      </ImageView>
+      <ImageView id="guichetier" fx:id="guichetier" accessibleRole="BUTTON" fitHeight="150.0" fitWidth="150.0" layoutX="119.0" layoutY="225.0" onMouseClicked="#loginGuich" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/guichetier.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="494.0" prefHeight="62.0" prefWidth="762.0" text="contect us : imadeddine.naitseghir@univ-bba.dz oussama.bentaleb@univ-bba.dz" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="494.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="485.0" layoutY="375.0" text="Chef service" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="KacstPen" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="129.0" layoutY="375.0" text="Guichetier" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="KacstPen" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="407.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="563.0" AnchorPane.topAnchor="2.0">
+         <image>
+            <Image url="@pictures/bank.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="605.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="611.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <image>
+            <Image url="@pictures/algeria.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

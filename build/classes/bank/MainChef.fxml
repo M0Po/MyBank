@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainPaneau" prefHeight="555.0" prefWidth="688.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.MainChefController">
+   <children>
+      <Pane layoutX="1.0" prefHeight="68.0" prefWidth="688.0" AnchorPane.bottomAnchor="487.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="77.0" prefWidth="688.0" text="Paneau de chef" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="56.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <HBox layoutX="-2.0" layoutY="82.0" prefHeight="68.0" prefWidth="688.0">
+         <children>
+            <Button fx:id="BtnAjouter" mnemonicParsing="false" onAction="#ajouter" prefHeight="77.0" prefWidth="350.0" text="Ajouter un guichetier" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="BtnPaneau" fx:id="BtnLisGui" mnemonicParsing="false" prefHeight="77.0" prefWidth="350.0" text="Listes des guichetiers" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="BtnPaneau" fx:id="BtnLisCl" mnemonicParsing="false" prefHeight="77.0" prefWidth="350.0" text="Listes des clients" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="BtnPaneau" fx:id="BtnHisto" mnemonicParsing="false" prefHeight="77.0" prefWidth="350.0" text="L'historique des opérations" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Pane fx:id="paneAjouter" layoutY="150.0" prefHeight="405.0" prefWidth="688.0">
+         <children>
+            <VBox layoutX="34.0" layoutY="1.0" prefHeight="329.0" prefWidth="154.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="47.0" prefWidth="173.0" text="ID">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="159.0" text="Nom" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="170.0" text="Prenom" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="160.0" text="Date de naissance" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="156.0" text="Nom de l'utilisateur" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="154.0" text="Mot de pass" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="190.0" text="Mot de pass" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <TextField fx:id="id" alignment="CENTER" layoutX="238.0" layoutY="14.0" prefHeight="26.0" prefWidth="415.0" promptText="ID">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="nom" alignment="CENTER" layoutX="238.0" layoutY="57.0" prefHeight="26.0" prefWidth="415.0" promptText="Nom">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="prenom" alignment="CENTER" layoutX="238.0" layoutY="105.0" prefHeight="26.0" prefWidth="415.0" promptText="Prenom">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="date" layoutX="238.0" layoutY="152.0" prefHeight="26.0" prefWidth="415.0" />
+            <TextField fx:id="user" alignment="CENTER" layoutX="238.0" layoutY="202.0" prefHeight="26.0" prefWidth="415.0" promptText="Nom de l'utilisateur">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="pass" alignment="CENTER" layoutX="238.0" layoutY="249.0" prefHeight="26.0" prefWidth="415.0" promptText="Mot de pass">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="repass" alignment="CENTER" layoutX="238.0" layoutY="293.0" prefHeight="26.0" prefWidth="415.0" promptText="Confiremation de Mot de pass">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="263.0" layoutY="329.0" mnemonicParsing="false" onAction="#vider" prefHeight="75.0" prefWidth="175.0" text="Vider les champs" textFill="BLUE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="438.0" layoutY="329.0" mnemonicParsing="false" onAction="#exit" prefHeight="75.0" prefWidth="175.0" text="Quitter" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="89.0" layoutY="329.0" mnemonicParsing="false" onAction="#confirmer" prefHeight="75.0" prefWidth="175.0" text="Confirmer" textFill="#00ff4b">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children></Pane>
+   </children>
+</AnchorPane>
